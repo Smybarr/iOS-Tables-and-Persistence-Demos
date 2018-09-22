@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Spy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grj-T8-yLr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1098" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-VG-UKv">
+                                        <rect key="frame" x="0.0" y="0.0" width="4032" height="3024"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fD8-VG-UKv" firstAttribute="top" secondItem="Grj-T8-yLr" secondAttribute="top" id="9Fc-gK-Hp5"/>
+                                    <constraint firstAttribute="trailing" secondItem="fD8-VG-UKv" secondAttribute="trailing" id="aYc-aN-RLZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fD8-VG-UKv" secondAttribute="bottom" id="c8z-VP-ngc"/>
+                                    <constraint firstItem="fD8-VG-UKv" firstAttribute="leading" secondItem="Grj-T8-yLr" secondAttribute="leading" id="fmx-d5-LlD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Grj-T8-yLr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0b2-Mk-5Y8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Grj-T8-yLr" secondAttribute="bottom" id="Zdn-Kz-76P"/>
+                            <constraint firstAttribute="trailing" secondItem="Grj-T8-yLr" secondAttribute="trailing" id="gY6-3R-rvP"/>
+                            <constraint firstItem="Grj-T8-yLr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s5p-Dz-CiL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fD8-VG-UKv" id="uFs-r3-z4p"/>
+                        <outlet property="scrollView" destination="Grj-T8-yLr" id="xCU-GR-BQN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1098" width="4032" height="3024"/>
+    </resources>
+</document>
